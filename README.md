@@ -9,3 +9,5 @@ Examples:
 
 
 ![Screenshot from 2023-05-08 09-41-13](https://user-images.githubusercontent.com/125988184/236827548-2a722096-944a-4540-a2ac-921a4c0b12e1.png)
+
+P.S.: only frontend has been implemented
