@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <!-- site metas -->
+      <title>e-commerce template</title>
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-l7gr0Q88Ox9XGXb47jh33BZ7fvz5C5dV7RpzNIf8uV7A43CD+bMHFL9XMpOMiW8l68NRvZGQwOsKj/BCTnY8iQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--  -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   </head>
+   <body>
+      <!-- desktop display starts -->
+      <div class="desktop">
+      <div class="" style="background-color: white;">
+         <div id="menucont" class="">
+            <div class="header_section_top">
+               <div class="row">
+                     <div class="custom_menu">
+                        <p style="font-size:14px;color: white; margin:6px;">ENVIOS A TODO EL PAIS - MINIMO DE COMPRA $15.000</p>
+                     </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- header section start -->
+         <div class="header_section">
+            <div class="fullcont">
+               <div class="containt_main" >
+                  <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/themes/common/logo-1634706072-1663884669-831b54cabf6e47b4524846e446829c1e1663884669-480-0.png?0" width="100" alt="Bootstrappin'">
+                  <div class="main">
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Busca por producto, marca, categoria ...">
+                        <div class="input-group-append">
+                           <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010">
+                           <i class="fa fa-search"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header_box">
+                     <div class="login_menu">
+                        <div class="custom_menu ">
+                        <ul>
+                           <li><a href="#">
+                              <i class="fa fa-heart " aria-hidden="true"></i>
+                              <span class="padding_10 " >Favoritos</span></a>
+                           </li>
+                           <li class="hover_items"><a href="#">
+                              <i class="fa fa-shopping-cart "  aria-hidden="true"></i>
+                              <span class="padding_10 " >Carrito</span></a>
+                           </li>
+                           <li class = "align-left;"><a href="#">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr style="height:1px;border:none;color:#333;background-color:#333;margin:8px 8px 0px 0px;">
+               <div class="row">
+                     <div class="custom_menu hover_items">
+                      <ul>
+                        <li><a href="index.html" style="padding: 0 20px;">Inicio</a></li>
+                        <li><a href="men-page.html" style="padding: 0 20px;">Hombre</a></li>
+                        <li><a href="men-page.html" style="padding: 0 20px;">Mujer</a></li>
+                        <li><a href="men-page.html" style="padding: 0 20px;">Infantil</a></li>
+                        <li><a href="men-page.html" style="padding: 0 20px;">Calzados</a></li>
+                        <li><a href="men-page.html" style="padding: 0 20px;">Ofertas</a></li>
+                        <li><a href="men-page.html" style="padding: 0 20px;">Deportes</a></li>
+                        <li><a href="brands.html" style="padding: 0 20px;">Marcas</a></li>
+                     </ul>
+                     </div>
+               </div>
+         <hr style="height:1px;border:none;color:#333;background-color:#333;margin-top:0px;margin-bottom:0px">
+         <!-- header section end -->
+         <div class="banner_section layout_padding">
+            <div id="bannerimage" class="">
+               <a href="#"><img style="width:100%;" src="https://img1.g-star.com/product/c_fill,f_auto,h_675,q_80/v1641322440/D22212-C336-1295-M01W/g-star-raw-typeface-back-graphic-boxy-t-shirt-grey.jpg"></a>
+            </div>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;margin-top:0px;margin-bottom:0px">
+         </div>
+
+
+      <!-- product section start -->
+      <!-- filter menu starts-->
+
+      <div class="container-fluid">
+        <div class="row">
+         <div class="col-lg-2">
+            <h4>Filtros</h4>
+            <hr>
+            <form>
+              <div class="form-group">
+                <label for="categoria">Categoría:</label>
+                <select class="form-control" style="font-size:14px;" id="categoria">
+                  <option>Todas las categorías</option>
+                  <option>Jeans</option>
+                  <option>Pantalones</option>
+                  <option>Bermudas</option>
+                  <option>Shorts</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="precio">Precio:</label>
+                <div class="input-group">
+                  <select class="form-control" style="font-size:14px;" id="precio">
+                    <option>Todos los precios</option>
+                    <option>Menos de $2000</option>
+                    <option>$2000 - $3000</option>
+                    <option>Más de $3000</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group talles">
+               <label>Talle:</label>
+               <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                 <div class="row">
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> 28
+                     </label>
+                   </div>
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> 29
+                     </label>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> 30
+                     </label>
+                   </div>
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> 3 1
+                     </label>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> 32
+                     </label>
+                   </div>
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> 33
+                     </label>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> 34
+                     </label>
+                   </div>
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> 36
+                     </label>
+                   </div>
+                 </div>
+                </div>
+              </div>
+              <div class="form-group">
+               <label>Color:</label>
+               <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                 <div class="row">
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> Negro
+                     </label>
+                   </div>
+                   <div class="col">
+                     <label class="btn btn-secondary btn-block">
+                       <input type="checkbox" autocomplete="off"> Azul
+                     </label>
+                   </div>
+                 </div>
+                 <div class="row">
+                  <div class="col">
+                    <label class="btn btn-secondary btn-block">
+                      <input type="checkbox" autocomplete="off"> Beige
+                    </label>
+                  </div>
+                  <div class="col">
+                    <label class="btn btn-secondary btn-block">
+                      <input type="checkbox" autocomplete="off"> Bordo
+                    </label>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Filtrar</button>
+            </form>
+          </div>
+<!-- filter menu end-->
+
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4">
+                <a href="product.html">
+                <div class="card h-100">
+                  <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/dsc070791-1ab9cd00f04dfd05c416666346502295-320-0.webp" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      <a >Jean Berlin</a>
+                    </h4>
+                    <h5 style="font-size: 18px;"><b>$6.150,00</b></h5>
+                  </div>
+                    <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+                </div>
+              </a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <a href="product.html">
+                <div class="card h-100">
+                  <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/_lr02820-51-cc4049a08f333d028916818368881839-640-0.webp" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                     <a href="#">Buzo Chaman Liso</a>
+                    </h4>
+                    <h5 style="font-size: 18px;"><b>$2.500,00</b></h5>
+                  </div>
+                    <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+                </div>
+              </a>
+              </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="product.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/mojojeans-men-1351-d46bbcc9cc458c8e4e16801085738556-320-0.webp" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Jean Ilicito</a>
+               </h4>
+               <h5 style="font-size: 18px;"><b>$5.950,00</b></h5>
+             </div>
+               <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+           </div>
+          </a>
+         </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="product.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/quinto-marron1-d2221c38122c02b97e16681778649619-320-0.webp" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Remera Renga</a>
+               </h4>
+               <h5 style="font-size: 18px;"><b>$1.700,00</b></h5>
+             </div>
+               <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+           </div>
+          </a>
+         </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="product.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/dsc072641-e778ea6e7d78fc95e016667932976774-320-0.webp" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Boxer Mojo</a>
+               </h4>
+               <h5 style="font-size: 18px;"><b>$6.150,00</b></h5>
+             </div>
+               <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+           </div>
+          </a>
+         </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="product.html">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/_lr008601-2cf375471fe15092c016818293833520-320-0.webp" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+               <a href="#">Pantalon Kito</a>
+            </h4>
+            <h5 style="font-size: 18px;"><b>$6.125,00</b></h5>
+          </div>
+            <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="product.html">
+         <div class="card h-100">
+           <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/_lr091821-31bc4c7de8fb2647dc16699976409562-640-0.webp" alt="">
+           <div class="card-body">
+             <h4 class="card-title">
+                <a href="#">Remera Bad Wolf</a>
+             </h4>
+             <h5 style="font-size: 18px;"><b>$3.000,00</b></h5>
+           </div>
+             <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+         </div>
+        </a>
+       </div>
+       <div class="col-lg-3 col-md-6 mb-4">
+        <a href="product.html">
+         <div class="card h-100">
+           <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/2021-11-17_lookbook_c111841-c84a9d84986250066216666368413715-640-0.webp" alt="">
+           <div class="card-body">
+             <h4 class="card-title">
+                <a href="#">Jean Black</a>
+             </h4>
+             <h5 style="font-size: 18px;"><b>$5.625,00</b></h5>
+           </div>
+             <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+         </div>
+       </div>
+      </a>
+      </div>
+   </div>
+    <!-- product section end -->
+</div>
+  <!-- desktop display ends -->
+</div>
+</div>
+</div>
+
+  <!-- tablet display starts -->
+    <div class="tablet">
+      <div class="" style="background-color: white;">
+         <div id="menucont" class="">
+            <div class="header_section_top">
+               <div class="row">
+                     <div class="custom_menu">
+                        <p style="font-size:12px;color: white; margin:0px;">ENVIOS A TODO EL PAIS - MINIMO DE COMPRA $15.000</p>
+                     </div>
+               </div>
+            </div>
+         </div>
+      <!-- header section start -->
+      <div class="header_section_movile">
+         <div class="toggle_icon">
+         <span class="" style="padding:10px; align-self: flex-start; " onclick="openNav();"><img src="images/toggle-icon.png"></span>
+         <img style="margin:10px auto;"src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/themes/common/logo-1634706072-1663884669-831b54cabf6e47b4524846e446829c1e1663884669-480-0.png?0" width="90" alt="Bootstrappin'">
+         <div class="login_menu">
+            <div class="custom_menu">
+            <ul>
+               <li><a href="#">
+                  <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+               </li>
+               <li class="hover_items"><a href="#">
+                  <i class="fa fa-shopping-cart fa-2x"  aria-hidden="true"></i>
+               </li>
+               <li class = "align-left;"><a href="#">
+                  <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+               </li>
+            </ul>
+      </div>
+           <div class="containt_main">
+              <div id="mySidenav" class="sidenav">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
+                 <a href="index.html">Inicio</a>
+                 <a href="men-page.html">Hombre</a>
+                 <a href="men-page.html">Mujer</a>
+                 <a href="men-page.html">Infantil</a>
+                 <a href="men-page.html">Calzados</a>
+                 <a href="men-page.html">Ofertas</a>
+                 <a href="men-page.html">Deportes</a>
+                 <a href="brands.html">Marcas</a>
+              </div>
+              </div>
+              </div>
+           </div>
+        </div>
+        <div class="search-bar">
+         <div class="input-group">
+            <input type="text" class="form-control" placeholder="Busca por producto, marca, categoria ...">
+            <div class="input-group-append">
+               <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010">
+               <i class="fa fa-search"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+       <!-- header section end -->
+
+      <hr style="height:1px;border:none;color:#333;background-color:#333;margin-bottom:0px;">
+      <div id="bannerimage" class="">
+         <a href="#"><img style="width:100%;" src="https://img1.g-star.com/product/c_fill,f_auto,h_675,q_80/v1641322440/D22212-C336-1295-M01W/g-star-raw-typeface-back-graphic-boxy-t-shirt-grey.jpg"></a>
+      </div>
+      <hr style="height:1px;border:none;color:#333;background-color:#333;margin-top:0px;">
+
+      <!-- side filter menu starts-->
+
+      <div class="container-fluid">
+
+        <div class="" style=" display: flex; justify-content: space-between; align-items: center;">
+        <button type="submit" class="ordenar-por__boton" onclick="openMenu();">Filtrar</button>
+
+        <form class="ordenar-por">
+          <div class="ordenar-por__campo">
+            <label for="ordenar-por">Ordenar por:</label>
+            <select id="ordenar-por" name="ordenar-por">
+              <option value="precio">Precio</option>
+              <option value="novedades">Novedades</option>
+              <option value="mas-vendidos">Más vendidos</option>
+            </select>
+          </div>
+        </form>
+      </div>
+        <div class="toggle_icon">
+          <div class="containt_main">
+
+            <div id="mySideMenu" class="sidenav">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeMenu();">&times;</a>
+               <div class="col-lg-3" style="background-color:#111;">
+                <h4 style="color:#ffffff;">Filtros</h4>
+                <hr style="height:1px;border:none;color:white;background-color:#333;margin-top:0px;">
+
+                <form>
+                  <div class="form-group filter-styles">
+                    <label for="categoria">Categoría:</label>
+                    <select class="form-control" style="font-size:14px;" id="categoria">
+                      <option>Todas las categorías</option>
+                      <option>Jeans</option>
+                      <option>Pantalones</option>
+                      <option>Bermudas</option>
+                      <option>Shorts</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <div class="input-group">
+                      <select class="form-control" style="font-size:14px;" id="precio">
+                        <option>Todos los precios</option>
+                        <option>Menos de $2000</option>
+                        <option>$2000 - $3000</option>
+                        <option>Más de $3000</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group talles">
+                   <label>Talle:</label>
+                   <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                     <div class="row">
+                       <div class="col">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> 28
+                         </label>
+                       </div>
+                       <div class="col">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> 29
+                         </label>
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="col">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> 30
+                         </label>
+                       </div>
+                       <div class="col talles">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> 3 1
+                         </label>
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="col">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> 32
+                         </label>
+                       </div>
+                       <div class="col">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> 33
+                         </label>
+                       </div>
+                     </div>
+                     <div class="row">
+                       <div class="col">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> 34
+                         </label>
+                       </div>
+                       <div class="col">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> 36
+                         </label>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                   <label>Color:</label>
+                   <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                     <div class="row">
+                       <div class="col">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> Negro
+                         </label>
+                       </div>
+                       <div class="col">
+                         <label class="btn btn-secondary btn-block">
+                           <input type="checkbox" autocomplete="off"> Azul
+                         </label>
+                       </div>
+                     </div>
+                     <div class="row">
+                      <div class="col">
+                        <label class="btn btn-secondary btn-block">
+                          <input type="checkbox" autocomplete="off"> Beige
+                        </label>
+                      </div>
+                      <div class="col">
+                        <label class="btn btn-secondary btn-block">
+                          <input type="checkbox" autocomplete="off"> Bordo
+                        </label>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Filtrar</button>
+                </form>
+              </div>
+            </div>
+            </div>
+          </div>
+      <!-- side filter menu ends-->
+     <!-- product section start-->
+         <div class="row">
+           <div class="col-lg-10">
+             <div class="row">
+               <div class="col-lg-3 col-md-6 mb-4">
+                <a href="product.html">
+                 <div class="card h-100">
+                   <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/dsc070791-1ab9cd00f04dfd05c416666346502295-320-0.webp" alt="">
+                   <div class="card-body">
+                     <h4 class="card-title">
+                       <a href="#">Jean Berlin</a>
+                     </h4>
+                     <h5 style="font-size: 18px;"><b>$6.150,00</b></h5>
+                   </div>
+                     <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+                 </div>
+                </a>
+               </div>
+               <div class="col-lg-3 col-md-6 mb-4">
+                <a href="product.html">
+                 <div class="card h-100">
+                   <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/_lr02820-51-cc4049a08f333d028916818368881839-640-0.webp" alt="">
+                   <div class="card-body">
+                     <h4 class="card-title">
+                      <a href="#">Buzo Chaman Liso</a>
+                     </h4>
+                     <h5 style="font-size: 18px;"><b>$2.500,00</b></h5>
+                   </div>
+                     <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+                 </div>
+                </a>
+               </div>
+           <div class="col-lg-3 col-md-6 mb-4">
+            <a href="product.html">
+             <div class="card h-100">
+               <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/mojojeans-men-1351-d46bbcc9cc458c8e4e16801085738556-320-0.webp" alt="">
+               <div class="card-body">
+                 <h4 class="card-title">
+                   <a href="#">Jean Ilicito</a>
+                </h4>
+                <h5 style="font-size: 18px;"><b>$5.950,00</b></h5>
+              </div>
+                <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+            </div>
+          </a>
+          </div>
+           <div class="col-lg-3 col-md-6 mb-4">
+            <a href="product.html">
+             <div class="card h-100">
+               <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/quinto-marron1-d2221c38122c02b97e16681778649619-320-0.webp" alt="">
+               <div class="card-body">
+                 <h4 class="card-title">
+                   <a href="#">Remera Renga</a>
+                </h4>
+                <h5 style="font-size: 18px;"><b>$1.700,00</b></h5>
+              </div>
+                <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+            </div>
+          </a>
+          </div>
+           <div class="col-lg-3 col-md-6 mb-4">
+            <a href="product.html">
+             <div class="card h-100">
+               <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/dsc072641-e778ea6e7d78fc95e016667932976774-320-0.webp" alt="">
+               <div class="card-body">
+                 <h4 class="card-title">
+                   <a href="#">Jean Berlin</a>
+                </h4>
+                <h5 style="font-size: 18px;"><b>$6.150,00</b></h5>
+              </div>
+                <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+            </div>
+          </a>
+          </div>
+       <div class="col-lg-3 col-md-6 mb-4">
+        <a href="product.html">
+         <div class="card h-100">
+           <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/_lr008601-2cf375471fe15092c016818293833520-320-0.webp" alt="">
+           <div class="card-body">
+             <h4 class="card-title">
+                <a href="#">Pantalon Kito</a>
+             </h4>
+             <h5 style="font-size: 18px;"><b>$6.125,00</b></h5>
+           </div>
+             <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+         </div>
+        </a>
+       </div>
+       <div class="col-lg-3 col-md-6 mb-4">
+        <a href="product.html">
+          <div class="card h-100">
+            <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/_lr091821-31bc4c7de8fb2647dc16699976409562-640-0.webp" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                 <a href="#">Remera Bad Wolf</a>
+              </h4>
+              <h5 style="font-size: 18px;"><b>$3.000,00</b></h5>
+            </div>
+              <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+          </div>
+        </a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <a href="product.html">
+          <div class="card h-100">
+            <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/2021-11-17_lookbook_c111841-c84a9d84986250066216666368413715-640-0.webp" alt="">
+            <div class="card-body">
+              <h4 class="card-title">
+                 <a href="#">Jean Black</a>
+              </h4>
+              <h5 style="font-size: 18px;"><b>$5.625,00</b></h5>
+            </div>
+              <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010;">AGREGAR AL CARRITO</button>
+          </div>
+        </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- product section start-->
+    </div>
+  </div>
+</div>
+</div>
+<!-- tablet display ends -->
+
+  <!-- mobile display starts -->
+  <div class="movil">
+   <div class="" style="background-color: white;">
+      <div id="menucont" class="">
+         <div class="header_section_top">
+            <div class="row">
+                  <div class="custom_menu" style="padding:5px;">
+                     <p style="font-size:10px;color: white; margin:0px;">ENVIOS A TODO EL PAIS - MINIMO DE COMPRA $15.000</p>
+                  </div>
+            </div>
+         </div>
+      </div>
+   <!-- header section start -->
+   <div class="header_section_movile">
+      <div class="toggle_icon">
+      <span class="" style="padding:10px; align-self: flex-start; " onclick="openNavmobile();"><img src="images/toggle-icon.png" style="width:35px"></span>
+      <img style="margin:10px auto;"src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/themes/common/logo-1634706072-1663884669-831b54cabf6e47b4524846e446829c1e1663884669-480-0.png?0" width="65px" alt="Bootstrappin'">
+      <div class="login_menu">
+         <div class="custom_menu" >
+         <ul>
+            <li><a href="#">
+               <i class="fa fa-heart fa-lg" aria-hidden="true"></i>
+            </li>
+            <li class="hover_items"><a href="#">
+               <i class="fa fa-shopping-cart fa-lg"  aria-hidden="true"></i>
+            </li>
+            <li class = "align-left;"><a href="#">
+               <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+            </li>
+         </ul>
+   </div>
+        <div class="containt_main">
+           <div id="mySidenav-mobile" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNavmobile();">&times;</a>
+              <a href="index.html">Inicio</a>
+              <a href="men-page.html">Hombre</a>
+              <a href="men-page.html">Mujer</a>
+              <a href="men-page.html">Infantil</a>
+              <a href="men-page.html">Calzados</a>
+              <a href="men-page.html">Ofertas</a>
+              <a href="men-page.html">Deportes</a>
+              <a href="brands.html">Marcas</a>
+           </div>
+           </div>
+           </div>
+        </div>
+     </div>
+     <div class="search-bar">
+      <div class="input-group">
+         <input type="text" class="form-control" placeholder="Buscar...">
+         <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010">
+            <i class="fa fa-search"></i>
+            </button>
+         </div>
+      </div>
+   </div>
+   <!-- header section end -->
+   <hr style="height:1px;border:none;color:#333;background-color:#333;margin-bottom:0px;">
+   <div id="bannerimage" class="">
+    <a href="#"><img style="width:100%;" src="https://img1.g-star.com/product/c_fill,f_auto,h_675,q_80/v1641322440/D22212-C336-1295-M01W/g-star-raw-typeface-back-graphic-boxy-t-shirt-grey.jpg"></a>
+  </div>
+   <hr style="height:1px;border:none;color:#333;background-color:#333;margin-top:0px;">
+
+        <!-- side filter menu starts-->
+
+        <div class="container-fluid">
+
+          <div class="" style=" display: flex; justify-content: space-between; align-items: center;">
+          <button type="submit" class="ordenar-por__boton" onclick="openMenumobile();">Filtrar</button>
+
+          <form class="ordenar-por">
+            <div class="ordenar-por__campo">
+              <label for="ordenar-por">Ordenar por:</label>
+              <select id="ordenar-por" name="ordenar-por">
+                <option value="precio">Precio</option>
+                <option value="novedades">Novedades</option>
+                <option value="mas-vendidos">Más vendidos</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+          <div class="toggle_icon">
+            <div class="containt_main">
+
+              <div id="mySideMenu-mobile" class="sidenav">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeMenumobile();">&times;</a>
+                 <div class="col-lg-3" style="background-color:#111;">
+                  <h4 style="color:#ffffff;">Filtros</h4>
+                  <hr style="height:1px;border:none;color:white;background-color:#333;margin-top:0px;">
+                  <form>
+                    <div class="form-group filter-styles">
+                      <label for="categoria">Categoría:</label>
+                      <select class="form-control" style="font-size:14px;" id="categoria">
+                        <option>Todas las categorías</option>
+                        <option>Jeans</option>
+                        <option>Pantalones</option>
+                        <option>Bermudas</option>
+                        <option>Shorts</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="precio">Precio:</label>
+                      <div class="input-group">
+                        <select class="form-control" style="font-size:14px;" id="precio">
+                          <option>Todos los precios</option>
+                          <option>Menos de $2000</option>
+                          <option>$2000 - $3000</option>
+                          <option>Más de $3000</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group talles">
+                     <label>Talle:</label>
+                     <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                       <div class="row">
+                         <div class="col">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> 28
+                           </label>
+                         </div>
+                         <div class="col">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> 29
+                           </label>
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> 30
+                           </label>
+                         </div>
+                         <div class="col talles">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> 3 1
+                           </label>
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> 32
+                           </label>
+                         </div>
+                         <div class="col">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> 33
+                           </label>
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> 34
+                           </label>
+                         </div>
+                         <div class="col">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> 36
+                           </label>
+                         </div>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                     <label>Color:</label>
+                     <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                       <div class="row">
+                         <div class="col">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> Negro
+                           </label>
+                         </div>
+                         <div class="col">
+                           <label class="btn btn-secondary btn-block">
+                             <input type="checkbox" autocomplete="off"> Azul
+                           </label>
+                         </div>
+                       </div>
+                       <div class="row">
+                        <div class="col">
+                          <label class="btn btn-secondary btn-block">
+                            <input type="checkbox" autocomplete="off"> Beige
+                          </label>
+                        </div>
+                        <div class="col">
+                          <label class="btn btn-secondary btn-block">
+                            <input type="checkbox" autocomplete="off"> Bordo
+                          </label>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Filtrar</button>
+                  </form>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- side filter menu ends-->
+            <!-- product section start-->
+           <div class="row">
+             <div class="col-lg-10">
+               <div class="row">
+                 <div class="col-lg-3 col-md-6 col-6 mb-4">
+                  <a href="product.html">
+                   <div class="card h-100">
+                     <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/dsc070791-1ab9cd00f04dfd05c416666346502295-320-0.webp" alt="">
+                     <div class="card-body">
+                       <h4 class="card-title">
+                         <a href="#">Jean Berlin</a>
+                       </h4>
+                       <h5 style="font-size: 18px;"><b>$6.150,00</b></h5>
+                     </div>
+                       <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010; font-size:12px;">AGREGAR AL CARRITO</button>
+                   </div>
+                  </a>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-6 mb-4">
+                  <a href="product.html">
+                   <div class="card h-100">
+                     <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/_lr02820-51-cc4049a08f333d028916818368881839-640-0.webp" alt="">
+                     <div class="card-body">
+                       <h4 class="card-title">
+                        <a href="#">Buzo Chaman Liso</a>
+                       </h4>
+                       <h5 style="font-size: 18px;"><b>$2.500,00</b></h5>
+                     </div>
+                       <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010; font-size:12px;">AGREGAR AL CARRITO</button>
+                   </div>
+                  </a>
+                 </div>
+             <div class="col-lg-3 col-md-6 col-6 mb-4">
+              <a href="product.html">
+               <div class="card h-100">
+                 <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/mojojeans-men-1351-d46bbcc9cc458c8e4e16801085738556-320-0.webp" alt="">
+                 <div class="card-body">
+                   <h4 class="card-title">
+                     <a href="#">Jean Ilicito</a>
+                  </h4>
+                  <h5 style="font-size: 18px;"><b>$5.950,00</b></h5>
+                </div>
+                  <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010; font-size:12px;">AGREGAR AL CARRITO</button>
+              </div>
+            </a>
+            </div>
+             <div class="col-lg-3 col-md-6 col-6 mb-4">
+              <a href="product.html">
+               <div class="card h-100">
+                 <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/quinto-marron1-d2221c38122c02b97e16681778649619-320-0.webp" alt="">
+                 <div class="card-body">
+                   <h4 class="card-title">
+                     <a href="#">Remera Renga</a>
+                  </h4>
+                  <h5 style="font-size: 18px;"><b>$1.700,00</b></h5>
+                </div>
+                  <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010; font-size:12px;">AGREGAR AL CARRITO</button>
+              </div>
+            </a>
+            </div>
+             <div class="col-lg-3 col-md-6 col-6 mb-4">
+              <a href="product.html">
+               <div class="card h-100">
+                 <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/dsc072641-e778ea6e7d78fc95e016667932976774-320-0.webp" alt="">
+                 <div class="card-body">
+                   <h4 class="card-title">
+                     <a href="#">Jean Berlin</a>
+                  </h4>
+                  <h5 style="font-size: 18px;"><b>$6.150,00</b></h5>
+                </div>
+                  <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010; font-size:12px;">AGREGAR AL CARRITO</button>
+              </div>
+            </a>
+            </div>
+         <div class="col-lg-3 col-md-6 col-6 mb-4">
+          <a href="product.html">
+           <div class="card h-100">
+             <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/_lr008601-2cf375471fe15092c016818293833520-320-0.webp" alt="">
+             <div class="card-body">
+               <h4 class="card-title">
+                  <a href="#">Pantalon Kito</a>
+               </h4>
+               <h5 style="font-size: 18px;"><b>$6.125,00</b></h5>
+             </div>
+               <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010; font-size:12px;">AGREGAR AL CARRITO</button>
+           </div>
+          </a>
+         </div>
+         <div class="col-lg-3 col-md-6 col-6 mb-4">
+          <a href="product.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/_lr091821-31bc4c7de8fb2647dc16699976409562-640-0.webp" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                   <a href="#">Remera Bad Wolf</a>
+                </h4>
+                <h5 style="font-size: 18px;"><b>$3.000,00</b></h5>
+              </div>
+                <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010; font-size:12px;">AGREGAR AL CARRITO</button>
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6 mb-4">
+            <a href="product.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/431/825/products/2021-11-17_lookbook_c111841-c84a9d84986250066216666368413715-640-0.webp" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                   <a href="#">Jean Black</a>
+                </h4>
+                <h5 style="font-size: 18px;"><b>$5.625,00</b></h5>
+              </div>
+                <button class="btn btn-secondary" type="button" style="background-color: #D22B2B; border-color:#B41010; font-size:12px;">AGREGAR AL CARRITO</button>
+            </div>
+          </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+    </div>
+    <!-- product section start-->
+  </div>
+  </div>
+<!-- mobile display ends -->
+
+      <!-- footer section start -->
+      <footer class="text-center text-white" style="background-color: #151515;">
+         <div class="container p-4">
+           <section class="mb-4">
+             <a style="padding: 6px 14px;"class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+               ><i class="fa fa-facebook-f"></i
+             ></a>
+             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+               ><i class="fa fa-twitter"></i
+             ></a>
+             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+               ><i class="fa fa-google"></i
+             ></a>
+             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+               ><i class="fa fa-instagram"></i
+             ></a>
+           </section>
+           <section class="">
+             <form action="">
+               <div class="row d-flex justify-content-center">
+                 <div class="">
+                   <p class="" style="margin:0px; padding-right:5px; padding-bottom: 5px; align:justify;">
+                     <strong>Subscribite a nuestro newsletter <br>
+                     y gana 8% OFF en tu primer compra</strong>
+                   </p>
+                 </div>
+
+                 <div class="col-md-5 col-12">
+                   <div class="form-outline form-white mb-4">
+                     <input type="email" id="form5Example2" class="form-control" placeholder="Tu correo electrónico"/>
+                   </div>
+                 </div>
+                 <div class="col-auto">
+                   <button type="submit" class="btn btn-outline-light mb-4">
+                     Enviar
+                   </button>
+                 </div>
+               </div>
+             </form>
+           </section>
+           <br>
+           <section class="">
+             <div class="row">
+               <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-md-0" style="text-align: left;">
+                  <h5 style="color:white;"class="text-uppercase"><b>AYUDA</b></h5>
+
+                 <ul class="list-unstyled mb-0" >
+                   <li>
+                     <a href="#!" class="text-white">¿Cómo comprar?</a>
+                   </li>
+                   <li>
+                     <a href="#!" class="text-white">Monto minimo</a>
+                   </li>
+                   <li>
+                     <a href="#!" class="text-white">Numero de orden</a>
+                   </li>
+                   <li>
+                     <a href="#!" class="text-white">Mi cuenta</a>
+                   </li>
+                   <li>
+                     <a href="#!" class="text-white">Dudas frecuentes</a>
+                   </li>
+                 </ul>
+               </div>
+
+               <div class="col-lg-4 col-md-6 mb-4 col-sm-3 mb-md-0" style="text-align: left; padding-bottom:20px;">
+                 <h5 style="color:white;"class="text-uppercase"><b>ACERCA DE</b></h5>
+
+                 <ul class="list-unstyled mb-0">
+                   <li>
+                     <a href="#!" class="text-white">Términos y condiciones</a>
+                   </li>
+                   <li>
+                     <a href="#!" class="text-white">Política de privacidad</a>
+                   </li>
+                   <li>
+                     <a href="#!" class="text-white">Política de devoluciones</a>
+                   </li>
+                   <li>
+                     <a href="#!" class="text-white">Plazos de entrega</a>
+                   </li>
+                   <li>
+                     <a href="#!" class="text-white">Promociones bancarias</a>
+                   </li>
+                 </ul>
+               </div>
+
+               <div class="col-lg-4 col-md-6 mb-4 mb-md-0" style="text-align: left;">
+                  <h5 style="color:white;"class="text-uppercase"><b>CONTACTANOS</b></h5>
+
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                     <a href="#">
+                        <i style="color:white" class="fa fa-light fa-phone" aria-hidden="true"></i>
+                        <span class="padding_10 text-white">Atención al cliente: (011) 11 2456-0481</span></a>
+                    </li>
+                    <li>
+                     <a href="#">
+                        <i style="color:white" class="fa fa-light fa-envelope" aria-hidden="true"></i>
+                        <span class="padding_10 text-white">ivobermudez03@gmail.com</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+           </section>
+         </div>
+
+         <!-- Copyright -->
+         <div class="text-center p-3" style="background-color: black;">
+           © 2023 Copyright:
+           <a class="text-white" href="">ivobermudez03@gmail.com</a>
+         </div>
+         <!-- Copyright -->
+       </footer>
+
+      <!-- Javascript -->
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "325px";
+         }
+
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+         function openMenu() {
+           document.getElementById("mySideMenu").style.width = "650px";
+         }
+
+         function openNavmobile() {
+            document.getElementById("mySidenav-mobile").style.width = "300px"
+         }
+
+         function closeNavmobile() {
+           document.getElementById("mySidenav-mobile").style.width = "0";
+         }
+
+         function closeMenu() {
+           document.getElementById("mySideMenu").style.width = "0";
+         }
+
+         function openMenumobile() {
+           document.getElementById("mySideMenu-mobile").style.width = "350px";
+         }
+
+         function closeMenumobile() {
+           document.getElementById("mySideMenu-mobile").style.width = "0";
+         }
+      </script>
+   </body>
+</html>
